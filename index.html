@@ -20,6 +20,12 @@
 </head>
 <body>
 <script>
+window.onload = function() {
+	findAll("input[type='radio'], input[type='checkbox']").forEach(function(el){
+		el.onclick = update;
+	});
+};
+
 window.onload = () => {
   'use strict';
 
