@@ -90,10 +90,10 @@ self.addEventListener("fetch", (event) => {
 /* simple version */
 var cacheName = 'hello-pwa';
 var filesToCache = [
-  '/password/'
-  '/password/index.html',
-  '/password/css/style.css',
-  '/password/js/main.js'
+  '/'
+  '/index.html',
+  '/css/style.css',
+  '/js/main.js'
 ];
 
 /* Start the service worker and cache all of the app's content */
