@@ -106,8 +106,16 @@ body > details[open] {
 
 </head>
 <body>
-</div>
-  <script src="sw.js"></script>
+<script>
+window.onload = () => {
+  'use strict';
+
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+             .register('./sw.js');
+  }
+}
+</script>
 </body>
 <form>
 	<fieldset title="A non-secure, easy-to-remember 'name' for this password">
