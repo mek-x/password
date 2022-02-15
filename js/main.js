@@ -61,18 +61,6 @@ function generateCustomPassword() {
 	}
 }
 
-window.onload = function() {
-	findAll("input[type='radio'], input[type='checkbox']").forEach(function(el){
-		el.onclick = update;
-	});
-};
-
-window.addEventListener("load", () => {
-  if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("sw.js");
-  }
-});
-
 /*
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-1, as defined
  * in FIPS PUB 180-1
